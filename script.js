@@ -2,7 +2,18 @@ let photoBoxImages = document.querySelectorAll("[data-image]")
 console.log()
 
 
+
+
 photoBoxImages.forEach(image => {
+
+    image.addEventListener("mouseover", ()=>{
+        let arrow = document.querySelector()
+    })
+
+
+
+
+
     image.addEventListener("click", ()=>{
                let img = image.parentElement.childNodes[2].childNodes
                 img.forEach(extra => {

@@ -1,7 +1,7 @@
 :root {
-    --col3: rgba(224, 51, 28, 0.651);
-    --col2: rgb(255, 94, 30);
-    --col1: rgb(110, 212, 156);
+    --col3: #e0331c;
+    --col2: #ff5e1e;
+    --col1: #6ed49c;
 }
 
 body{
@@ -38,9 +38,6 @@ nav {
     font-size: 2rem;
 }
 
-.nav-links {
-
-}
 a {
     font-size: 1.5rem;
     color: rgb(128, 128, 128);
@@ -48,6 +45,7 @@ a {
 
 .nav-social a {
 font-size: 2rem;
+color: white;
 }
 
 
@@ -62,11 +60,16 @@ font-size: 2rem;
     justify-content: space-between;
     margin-bottom: 4rem;
 }
+
+.age {
+    font-size: 3rem;
+    color: rgb(184, 184, 184);
+}
 .hello-text {
-    margin: 2rem 2rem;
+    margin: 2rem 0rem;
     font-size: 1.2rem;
-    color: rgb(128, 128, 128);
-    line-height: 1.2; 
+    color: rgb(184, 184, 184);
+    line-height: 1.4; 
 }
 
 .apply {
@@ -112,7 +115,6 @@ font-size: 2rem;
 }
 
 .list {
-    color: rgb(128, 128, 128);
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -120,10 +122,11 @@ font-size: 2rem;
 }
 
 ul {
-    font-size: 1.3rem;
     margin-bottom: 0.6rem;
-    line-height: 1.2; 
     font-weight: 200;
+    font-size: 1.2rem;
+    color: rgb(184, 184, 184);
+    line-height: 1.4; 
 }
 
 .list ul{
@@ -185,7 +188,9 @@ ul {
     filter: grayscale(var(--muutuja));
     z-index: 2;
     cursor: pointer;
+
 }
+
 
 .down-arrow {
     margin-top: 6rem;
@@ -194,13 +199,10 @@ ul {
 }
 .fa-chevron-down {
     max-width: 8rem;
-
     background-image: linear-gradient(90deg, var(--col1), var(--col2), var(--col3));
     font-size: 5rem;
-
     -webkit-background-clip: text;
     color: transparent;
-
 }
 
 @media (max-width: 1100px) {
@@ -218,14 +220,22 @@ ul {
     }
 
     .hello {
+        display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        margin-left: 0rem;
+        margin-left: 2rem;       
     }
-    .hello .headline {
-        margin-left: 0rem;
-        margin-bottom: 1rem;
-        text-align: justify;
+    .apply {
+        align-self: center;
+    }
+
+    .hello .headline1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+
+    .hello-text {
+        max-width: 95%;
     }
 
     .info {
@@ -254,11 +264,7 @@ ul {
         margin-top: 2rem;
     }
 
-    .hello .headline {
-        font-size: 3rem;
-        text-align: center;
-        margin-top: 2rem;
-    }
+
 }
 
 .footer {
@@ -278,3 +284,23 @@ ul {
 i {
 font-style: italic;
 }
+
+.photo-box img:hover ~ .left-arrow {
+    opacity: 1;
+    transition: 2000ms ease-in-out;
+}
+
+.left-arrow {
+    background-image: linear-gradient(-90deg, var(--col1), var(--col2), var(--col3));
+    min-width: 30px;
+    -webkit-background-clip: text;
+    position: absolute;
+    z-index: 5;
+    font-size: 3rem;
+    top: 5%;
+    left: 5%;
+    color: transparent;
+    opacity: 0;
+    transition: 1000ms ease-in-out;
+}
+
