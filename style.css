@@ -1,7 +1,7 @@
 :root {
-    --col1: rgb(28, 224, 165);
-    --col2: rgb(73, 205, 223);
-    --col3: rgb(170, 90, 216);
+    --col3: rgba(224, 51, 28, 0.651);
+    --col2: rgb(255, 94, 30);
+    --col1: rgb(110, 212, 156);
 }
 
 body{
@@ -35,17 +35,15 @@ nav {
     background-image: linear-gradient(90deg, var(--col1), var(--col2), var(--col3));
     -webkit-background-clip: text;
     color: transparent; 
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
-    align-self: center;
+
 }
 a {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: rgb(128, 128, 128);
 }
 
 .nav-social a {
@@ -64,9 +62,15 @@ font-size: 2rem;
     justify-content: space-between;
     margin-bottom: 4rem;
 }
+.hello-text {
+    margin: 2rem 2rem;
+    font-size: 1.2rem;
+    color: rgb(128, 128, 128);
+    line-height: 1.2; 
+}
 
 .apply {
-    background-image: linear-gradient(90deg, var(--col1), var(--col2), var(--col3));
+    background-image: linear-gradient(45deg, var(--col1), var(--col2), var(--col3));
     margin: 0px;
     max-height: 300px;
     max-width: 300px;
@@ -85,9 +89,13 @@ font-size: 2rem;
     margin-bottom: 10rem;
 }
 
-.headline {
+.headline1, .headline {
     font-size: 4rem;
     font-weight: 200;
+}
+
+.headline1 {
+    max-width: 60%;
 }
 
 .info {
@@ -115,6 +123,7 @@ ul {
     font-size: 1.3rem;
     margin-bottom: 0.6rem;
     line-height: 1.2; 
+    font-weight: 200;
 }
 
 .list ul{
@@ -263,6 +272,9 @@ ul {
     background-image: linear-gradient(90deg, var(--col1), var(--col2), var(--col3));
     font-size: 1.4rem;
     -webkit-background-clip: text;
-    color: transparent;
-    height: 2rem;
+    color:transparent
+}
+
+i {
+font-style: italic;
 }
